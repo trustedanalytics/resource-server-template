@@ -1,0 +1,11 @@
+---
+applications:
+- name: resource-server-template
+  memory: 512M
+  instances: 1
+  host: resource-server-template
+  path: target/resource-server-template-${version}.jar
+  services: 
+  - sso
+  env:
+    SPRING_PROFILES_ACTIVE: "cloud"
