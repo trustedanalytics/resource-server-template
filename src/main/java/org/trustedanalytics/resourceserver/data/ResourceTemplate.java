@@ -16,7 +16,7 @@
 package org.trustedanalytics.resourceserver.data;
 
 public class ResourceTemplate {
-	
+ 
     private String resourceValue;
     
     public ResourceTemplate(String value) {
