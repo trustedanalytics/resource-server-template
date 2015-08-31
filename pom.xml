@@ -83,7 +83,11 @@
 
     <properties>
         <start-class>org.trustedanalytics.resourceserver.Application</start-class>
-    </properties>
+        <jacoco-measurement-instructions>0.680</jacoco-measurement-instructions>
+        <jacoco-measurement-branches>0.800</jacoco-measurement-branches>
+        <jacoco-measurement-lines>0.800</jacoco-measurement-lines>
+        <jacoco-measurement-classes>0.800</jacoco-measurement-classes>
+</properties>
 
     <build>
         <resources>
