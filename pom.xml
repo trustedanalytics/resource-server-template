@@ -4,10 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>resource-server-template</artifactId>
-    <scm>
-        <connection>scm:git:git@resource-server-template:trustedanalytics/resource-server-template.git</connection>
-    </scm>
-    <version>0.4.1-SNAPSHOT</version>
+    <version>0.4.1</version>
 
     <parent>
         <groupId>org.trustedanalytics</groupId>
