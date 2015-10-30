@@ -15,29 +15,22 @@
  */
 package org.trustedanalytics.resourceserver.rest;
 
-import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-
-import org.trustedanalytics.resourceserver.data.DataProvider;
-import org.trustedanalytics.resourceserver.data.DemoData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.trustedanalytics.resourceserver.data.DataProvider;
+import org.trustedanalytics.resourceserver.data.DemoData;
+
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 
 @RestController
-public class ResourceController {
-    public static final String GET_RESOURCE_ENDPOINT_URL = "/rest/resource";
+public class OpenController {
+    public static final String GET_OPEN_ENDPOINT_URL = "/rest/open";
 
-    private final DataProvider dataProvider;
-
-    @Autowired
-    public ResourceController(DataProvider dataProvider) {
-        this.dataProvider = dataProvider;
-    }
-
-    @RequestMapping(value = GET_RESOURCE_ENDPOINT_URL, method = GET, produces = APPLICATION_JSON_VALUE)
+    @RequestMapping(value = GET_OPEN_ENDPOINT_URL, method = GET, produces = APPLICATION_JSON_VALUE)
     public DemoData getResourceValue() {
-        return dataProvider.getDemoData();
+        return new DemoData("This is an open endpoint");
     }
 }

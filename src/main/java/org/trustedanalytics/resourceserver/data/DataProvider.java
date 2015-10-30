@@ -29,12 +29,12 @@ public class DataProvider {
 
     // Get the value from property
 
-    @Value("${cf.resource}")
-    private String resourceValue;
+    @Value("${demo.data}")
+    private String demoData;
 
-    public ResourceTemplate getResourceValue() {
+    public DemoData getDemoData() {
         // Create resource with new value
-        return new ResourceTemplate(resourceValue);
+        return new DemoData(demoData);
     }
 
 }

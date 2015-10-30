@@ -15,7 +15,7 @@
  */
 package org.trustedanalytics.resourceserver.unit;
 
-import org.trustedanalytics.resourceserver.data.ResourceTemplate;
+import org.trustedanalytics.resourceserver.data.DemoData;
 import org.trustedanalytics.resourceserver.data.DataProvider;
 import org.trustedanalytics.resourceserver.rest.ResourceController;
 
@@ -47,7 +47,7 @@ public class ResourceControllerTest {
     
     @Test
     public void getResourceValueTest() {
-        ResourceTemplate a = sut.getResourceValue();
+        DemoData a = sut.getResourceValue();
         assertEquals(CF_RESOURCE,a.getValue());
     }
 

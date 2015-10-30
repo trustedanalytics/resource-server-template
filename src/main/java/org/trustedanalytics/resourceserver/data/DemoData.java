@@ -15,20 +15,20 @@
  */
 package org.trustedanalytics.resourceserver.data;
 
-public class ResourceTemplate {
+public class DemoData {
  
-    private String resourceValue;
+    private String value;
     
-    public ResourceTemplate(String value) {
+    public DemoData(String value) {
         setValue(value);
     }
 
     public String getValue() {
-        return resourceValue;
+        return value;
     }
 
     public void setValue(String value) {
-        this.resourceValue = value;
+        this.value = value;
     }
 
 }
