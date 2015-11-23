@@ -38,7 +38,7 @@ public class TestConfiguration {
         PropertyPlaceholderConfigurer ppc = new PropertyPlaceholderConfigurer();
         ppc.setIgnoreResourceNotFound(true);
         final Properties properties = new Properties();
-        properties.setProperty("cf.resource", ResourceControllerTest.CF_RESOURCE);
+        properties.setProperty("demo.data", ResourceControllerTest.CF_RESOURCE);
         ppc.setProperties(properties);
      
         return ppc;

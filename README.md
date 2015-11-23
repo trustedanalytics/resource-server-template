@@ -17,6 +17,7 @@ Your extra header entry should look like this:
 
 Authentication: bearer ...very_long_token_here...
 
-- Sample endpoint '/rest/resource' response content is retrieved from property cf.resource .
+- Sample protected endpoint '/rest/resource' response content is retrieved from property demo.data.
 
+- Sample open endpoint '/rest/open' is serving static string.
 
