@@ -15,3 +15,5 @@ logging:
 
 demo.data: ${text:"Hello world"}
 
+endpoints.enabled: false
+endpoints.health.enabled: true
