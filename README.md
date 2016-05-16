@@ -1,3 +1,5 @@
+[![Dependency Status](https://www.versioneye.com/user/projects/57236f9fba37ce00464e05fe/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57236f9fba37ce00464e05fe)
+
 # resource-server-template
 Template for OAuth resource servers in Spring Boot.
 
